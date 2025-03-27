@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VI Events - Premium Event Management Services</title>
+    <link rel="icon" href="public/images/vi-logo.jpg" type="image/jpg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Web components polyfill for better browser support -->
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.5.0/webcomponents-bundle.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="public/images/vi-logo.jpg" alt="VI Events Logo">
+                <h1>VI Events</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#videos">Videos</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact" class="btn-primary">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')"></div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1469371670807-013ccf25f16a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')"></div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1517457373958-b7bdd4587205?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')"></div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1505236858219-8359eb29e329?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')"></div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')"></div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-logo">
+                    <img src="public/images/vi-logo.jpg" alt="VI Events Logo">
+                </div>
+                <h1>Creating Unforgettable Experiences</h1>
+                <p>Professional event planning services for any occasion</p>
+                <a href="#services" class="btn-primary">Explore Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>We offer comprehensive event management solutions for all your needs</p>
+            </div>
+            
+            <div class="service-logos">
+                <div class="service-logo">
+                    <div class="logo-circle">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <span>Wedding Events</span>
+                </div>
+                <div class="service-logo">
+                    <div class="logo-circle">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <span>Corporate Events</span>
+                </div>
+                <div class="service-logo">
+                    <div class="logo-circle">
+                        <i class="fas fa-landmark"></i>
+                    </div>
+                    <span>Government Events</span>
+                </div>
+                <div class="service-logo">
+                    <div class="logo-circle">
+                        <i class="fas fa-glass-cheers"></i>
+                    </div>
+                    <span>Social Gatherings</span>
+                </div>
+                <div class="service-logo">
+                    <div class="logo-circle">
+                        <i class="fas fa-guitar"></i>
+                    </div>
+                    <span>Festivals & Concerts</span>
+                </div>
+                <div class="service-logo">
+                    <div class="logo-circle">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <span>Educational Events</span>
+                </div>
+            </div>
+            
+            <div class="services-grid" id="services-container">
+                <!-- Service components will be dynamically loaded here from app-state -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Portfolio</h2>
+                <p>Take a look at some of our recent successful events</p>
+            </div>
+            
+            <div class="portfolio-gallery" id="portfolio-container">
+                <!-- Video components will be dynamically loaded here from app-state -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Gallery Section -->
+    <section id="videos" class="videos">
+        <div class="container">
+            <div class="section-header">
+                <h2>Event Highlights</h2>
+                <p>Experience the magic of our events through these stunning videos</p>
+            </div>
+            
+            <div class="video-grid" id="videos-container">
+                <!-- Video components will be dynamically loaded here from app-state -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Background Section -->
+    <section class="team-background">
+        <div class="team-background-image" style="background-image: url('./public/images/group.jpg');"></div>
+        <div class="team-overlay">
+            <h2>Meet Our Amazing Team</h2>
+            <p>Our dedicated professionals work together to create exceptional events that exceed expectations. With years of experience and a passion for perfection, we transform your vision into unforgettable experiences.</p>
+            <a href="#about" class="team-cta">Learn More About Us</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Us</h2>
+                <p>Learn more about our company and values</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-logo">
+                    <img src="public/images/vi-logo.jpg" alt="VI Events Logo">
+                </div>
+                <div class="about-text">
+                    <h3>Your Event, Our Expertise</h3>
+                    <p>At VI Events, we bring your vision to life with meticulous planning and flawless execution. With over 10 years of experience in the industry, our team of dedicated professionals is committed to creating memorable experiences for all occasions.</p>
+                    <p>We pride ourselves on attention to detail, creative solutions, and personalized service that exceeds expectations. From intimate gatherings to large-scale productions, we have the expertise and network to make your event extraordinary.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h4>500+</h4>
+                            <p>Events Managed</p>
+                        </div>
+                        <div class="stat">
+                            <h4>50+</h4>
+                            <p>Team Members</p>
+                        </div>
+                        <div class="stat">
+                            <h4>98%</h4>
+                            <p>Client Satisfaction</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="team-section">
+                <h3>Meet Our Leadership Team</h3>
+                <div class="team-members">
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="public/images/virag-bagde.jpg" alt="Virag Bagde">
+                        </div>
+                        <h4>Virag Bagde</h4>
+                        <p>Founder & CEO</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="public/images/ishan-bagde.jpg" alt="Ishan Bagde">
+                        </div>
+                        <h4>Ishan Bagde</h4>
+                        <p>Creative Director</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="public/images/sugat-tirpude.jpg" alt="Sugat Tirpude">
+                        </div>
+                        <h4>Sugat Tirpude</h4>
+                        <p>Operations Manager</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="public/images/anvay-bagde.jpg" alt="Anvay Bagde">
+                        </div>
+                        <h4>Anvay Bagde</h4>
+                        <p>Technical Director</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="public/images/sarthak-bagde.jpg" alt="Sarthak Bagde">
+                        </div>
+                        <h4>Sarthak Bagde</h4>
+                        <p>Client Relations Manager</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Contact us to discuss your event needs</p>
+            </div>
+            
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Our Location</h3>
+                            <p>Vakil Peth, Hajarewadi, Nagpur, India</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone Number</h3>
+                            <p>+91 8830616389</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email Address</h3>
+                            <p>info@vievents.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3 id="form-title">Contact Us</h3>
+                    <form id="contactForm" action="https://formsubmit.co/nicklausmikalson365@gmail.com" method="POST">
+                        <!-- FormSubmit configuration -->
+                        <input type="hidden" name="_subject" value="New event booking inquiry">
+                        <input type="hidden" name="_template" value="table">
+                        
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Your Phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <select id="eventType" name="eventType" required>
+                                <option value="">Select Event Type</option>
+                                <option value="Wedding">Wedding</option>
+                                <option value="Corporate">Corporate Event</option>
+                                <option value="Government">Government Event</option>
+                                <option value="Social">Social Gathering</option>
+                                <option value="Festival">Festival/Concert</option>
+                                <option value="Educational">Educational Event</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="date" id="eventDate" name="eventDate" placeholder="Event Date">
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="number" id="guests" name="guests" placeholder="Expected Number of Guests">
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                    <div id="formSuccess" class="form-success">
+                        <i class="fas fa-check-circle"></i>
+                        <p>Thank you for your inquiry! Your message has been sent to nicklausmikalson365@gmail.com. We'll get back to you soon.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="public/images/vi-logo.jpg" alt="VI Events Logo">
+                    <h2>VI Events</h2>
+                    <p>Creating memorable experiences since 2012</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#videos">Videos</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-services">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="#wedding">Wedding Events</a></li>
+                        <li><a href="#corporate">Corporate Events</a></li>
+                        <li><a href="#government">Government Events</a></li>
+                        <li><a href="#social">Social Gatherings</a></li>
+                        <li><a href="#festivals">Festivals & Concerts</a></li>
+                        <li><a href="#educational">Educational Events</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h3>Subscribe to Newsletter</h3>
+                    <form class="newsletter-form" action="https://formsubmit.co/nicklausmikalson365@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="Newsletter Subscription">
+                        <input type="email" name="email" placeholder="Your Email Address" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 VI Events. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="components/component-loader.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
